@@ -9,3 +9,11 @@ body {
     color: 14px;
     font-family: Helvetica, Arial, sans-serif;
 }
+input[type=text], select, textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 14px;
+  }
