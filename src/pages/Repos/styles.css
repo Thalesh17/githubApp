@@ -5,12 +5,14 @@
     padding-left: 10px;
 }
 .content-repo {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 3rem;
+    margin-top: 1rem;
     flex-direction: column;
     flex-wrap: wrap;
-    grid-gap: 22px;
     align-items: flex-start;
-    gap: 22px;
 }
 .container-repos{
     display: flex;

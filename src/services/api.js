@@ -10,6 +10,16 @@ const getReposByUserLogin = async(login) => {
   return await basicFetch(`/users/${login}/repos`);
 }
 
+const getStarredUser = async(url) => {
+  return await fetchWithoutUrlBase(url);
+}
+
+const fetchWithoutUrlBase = async (endpoint) => {
+  const req = await fetch(endpoint);
+  const json = req.json();
+
+  return json;
+}
 
 const basicFetch = async (endpoint) => {
   const req = await fetch(`${url}${endpoint}`);
@@ -17,4 +27,4 @@ const basicFetch = async (endpoint) => {
 
   return json;
 }
-export {getUser, getReposByUserLogin};
+export {getUser, getReposByUserLogin, getStarredUser};

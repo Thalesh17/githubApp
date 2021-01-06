@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
+import { useRepositoy } from '../../contexts/repositories';
 import { Repo } from '../../components/Repo';
 import { User } from '../../components/User';
-import { getUsers } from '../../services/api';
 import './styles.css';
-import { useRepositoy } from '../../contexts/repositories';
 
 export const Repos = () => {
     const {user} = useRepositoy();

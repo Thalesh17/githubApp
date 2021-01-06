@@ -3,7 +3,7 @@ import './styles.css';
 import { useRepositoy } from '../../contexts/repositories';
 
 export const User = () => {
-    const {user} = useRepositoy();
+    const { user } = useRepositoy();
     console.log(user);
 
     return (
@@ -16,10 +16,10 @@ export const User = () => {
                 <div class="buttons">
                     <button class="primary">
                         Repositórios
-		</button>
+		        </button>
                     <button class="primary ghost">
                         Following
-		</button>
+		        </button>
                 </div>
                 {/* <div class="skills">
                     <h6>Skills</h6>

@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState, useContext } from 'react';
-import { getUser, getReposByUserLogin } from '../services/api';
+import { getUser, getReposByUserLogin, getStarredUser } from '../services/api';
 const RepositoryContext = createContext();
 
 const RepositoryProvider = ({children}) => {
@@ -14,7 +14,8 @@ const RepositoryProvider = ({children}) => {
     const mountGitUser = async (user) => {
         let userData = {
             ...user,
-            repos: await getReposByUserLogin(user.login)
+            repos: await getReposByUserLogin(user.login),
+            // starreds: await getStarredUser(user.starred_url)
         }
         console.log(userData);
 

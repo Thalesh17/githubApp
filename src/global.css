@@ -5,9 +5,10 @@
 }
 body {
     background: #fff;
-    font-size: 14px;
-    color: 14px;
-    font-family: Helvetica, Arial, sans-serif;
+    /* font-size: 14px; */
+    color: #847e7e;
+    font-family: Montserrat, sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
 }
 input[type=text], select, textarea{
     padding: 14px;
@@ -21,6 +22,9 @@ input[type=text], select, textarea{
 ::placeholder {
     color:#c9c9c9;
     opacity: 1; /* Firefox */
+}
+button {
+    cursor: pointer;
 }
 .button {
     background-color: #4CAF50; /* Green */
