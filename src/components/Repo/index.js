@@ -6,6 +6,12 @@ export const Repo = ({ repo }) => {
     return (
         <div className="repo-user">
             <h3>{repo.name}</h3>
+            {repo.language && (
+                <div className="repo-language">
+                    <span className={`${repo.language && repo.language.replace('#', '')} color-language`}></span>
+                    <h5>{repo.language}</h5>
+                </div>
+            )}
             <div className="repo-info">
                 <h5>Stars: {repo.stargazers_count}</h5>
                 <h5>Forks: {repo.forks}</h5>
@@ -14,12 +20,6 @@ export const Repo = ({ repo }) => {
             <small className="update-repo">
                 Update {repo.updated_at}
             </small>
-            {repo.language && (
-                <div className="repo-language">
-                    <span className={`${repo.language && repo.language.replace('#', '')} color-language`}></span>
-                    <h5>{repo.language}</h5>
-                </div>
-            )}
         </div>
     )
 }

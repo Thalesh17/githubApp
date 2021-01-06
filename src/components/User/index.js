@@ -7,7 +7,7 @@ export const User = () => {
     console.log(user);
 
     return (
-        <div>
+        <div className="container-user-card">
             <div class="card-container">
                 <img width={110} class="round" src={user.avatar_url} alt="user" />
                 <h3>{user.login}</h3>

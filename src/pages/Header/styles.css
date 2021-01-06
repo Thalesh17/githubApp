@@ -1,14 +1,11 @@
 .container {
-  height: 60px;
+  height: 70px;
   background: #7159c1;
   color: #fff;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 0 30px;
-  display: flex;
-  flex-direction: row;
-  gap: 18rem;
 }
 .content {
   padding-top: 10px;
