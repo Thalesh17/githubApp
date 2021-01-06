@@ -4,16 +4,33 @@
     box-sizing: border-box;
 }
 body {
-    background: #f5f5f5;
+    background: #fff;
     font-size: 14px;
     color: 14px;
     font-family: Helvetica, Arial, sans-serif;
 }
 input[type=text], select, textarea{
-    padding: 10px;
+    padding: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%;
     box-sizing: border-box;
     resize: vertical;
     font-size: 14px;
+}
+::placeholder {
+    color:#c9c9c9;
+    opacity: 1; /* Firefox */
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
   }

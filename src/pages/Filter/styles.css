@@ -1,0 +1,55 @@
+.container-filter {
+    /* margin-top: 3rem; */
+}
+
+.content-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-input {
+    display: flex;
+    width: 40rem;
+}
+
+.text-input {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.button-filter {
+    background-color: #008CBA;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 13px;
+    background: #7159c1;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.input-field {
+    width: 100%;
+    background: #896bec;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    border: none!important;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}

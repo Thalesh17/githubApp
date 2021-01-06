@@ -1,0 +1,20 @@
+.container-users {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+    padding-left: 10px;
+}
+.content-repo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-gap: 22px;
+    align-items: flex-start;
+    gap: 22px;
+}
+.container-repos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

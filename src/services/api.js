@@ -1,14 +1,20 @@
 import React from 'react';
 
-const url = 'https://api.github.com/';
+const url = 'https://api.github.com';
 
-const getUser = (name) => {
-
+const getUser = async(name) => {
+  return await basicFetch(`/users/${name}`);
 }
 
+const getReposByUserLogin = async(login) => {
+  return await basicFetch(`/users/${login}/repos`);
+}
+
+
 const basicFetch = async (endpoint) => {
-  const req = await fetch(`${API_BASE}${endpoint}`);
+  const req = await fetch(`${url}${endpoint}`);
   const json = req.json();
 
   return json;
 }
+export {getUser, getReposByUserLogin};
