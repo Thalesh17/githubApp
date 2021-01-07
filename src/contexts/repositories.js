@@ -6,18 +6,20 @@ const RepositoryProvider = ({children}) => {
     const [user, setUser] = useState(null);
 
     const getUserRepositories = async(user) => {
+        setUser(null);
         let userData = await mountGitUser(await getUser(user));
-        console.log(userData);
         setUser(userData);
     }
 
     const mountGitUser = async (user) => {
+        if(user && user.message) {
+            return {error: 'Usuario não encontrado'};
+        }
+
         let userData = {
             ...user,
             repos: await getReposByUserLogin(user.login),
-            // starreds: await getStarredUser(user.starred_url)
         }
-        console.log(userData);
 
         return userData;
     }

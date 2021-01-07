@@ -7,7 +7,8 @@ const Filter = () => {
   const [filter, setFilter] = useState("");
 
   const handleFilter = async () => {
-    await getUserRepositories(filter);
+    if(filter.length > 0) 
+      await getUserRepositories(filter);
   }
 
   return (

@@ -6,6 +6,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 0 30px;
+  position: fixed;
+  top: 0; 
+  height: 4rem;
+  display: grid;
+  align-items: center;
+  z-index: 999;
+  max-height: 4rem;
+  width: 100vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .content {
   padding-top: 10px;

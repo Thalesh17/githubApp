@@ -9,8 +9,10 @@ export const Repos = () => {
     const [repos, setRepos] = useState([]);
 
     useEffect(() => {    
+        console.log(user);
         const getRepos = async() => {
             if(user) {
+                setRepos([]);
                 setRepos(user.repos);
             }
         }
