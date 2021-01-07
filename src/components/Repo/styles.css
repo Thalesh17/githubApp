@@ -3,6 +3,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    transform: scale(0.9);
+    transition: all ease 0.5s;
+}
+.repo-user:hover {
+    transform: scale(1);
 }
 .color-language {
     position: relative;
@@ -19,6 +24,11 @@
     align-items: center;
     gap: 10px;
     justify-content: flex-start;
+}
+.repo-name {
+    max-width: 16rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .repo-info {
     text-align: left;

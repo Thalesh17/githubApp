@@ -5,7 +5,7 @@ import './styles.css';
 export const Repo = ({ repo }) => {
     return (
         <div className="repo-user">
-            <h3>{repo.name}</h3>
+            <h3 className="repo-name">{repo.name}</h3>
             {repo.language && (
                 <div className="repo-language">
                     <span className={`${repo.language && repo.language.replace('#', '')} color-language`}></span>

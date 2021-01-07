@@ -17,10 +17,11 @@ const Filter = () => {
           <div class="input-container">
             <input 
               onChange={(e) => setFilter(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' ? handleFilter() : ''}
               className="input-field"
               placeholder="Digite o nome do usuario ou organização" 
               type="text"/>
-              <i class="icon" onClick={handleFilter}>Filtrar</i>
+              <i class="icon" on onClick={handleFilter}>🔎 </i>
           </div>
         </div>
       </div>

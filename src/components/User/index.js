@@ -18,7 +18,7 @@ export const User = () => {
                         Repositórios
 		        </button>
                     <button class="primary ghost">
-                        Following
+                        Visitados
 		        </button>
                 </div>
                 {/* <div class="skills">

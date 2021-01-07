@@ -31,7 +31,10 @@
 
 .icon {
     padding: 13px;
-    background: #7159c1;
+    background: #ffffff;
+    border-radius: 0px 4px 4px 0px;
+    border-color: #896bec;
+    border: 1px solid;
     color: white;
     min-width: 50px;
     text-align: center;
